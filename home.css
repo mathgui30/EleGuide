@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e3eaf0;
+}
+.col {
+    margin-left: 200px;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px; 
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    flex-basis: 200px;
+    padding: 3px;
+}
+.card.hide {
+    display: none;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+    height: 200px;
+}
+.btn-primary{
+    border-radius: 10px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: rgba(37,95,156,0.9);
+}
+h3,h5{
+    color: rgb(0, 91, 228)
+}
+.rectangle{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #222e9d;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+    color: #ececec;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+    
+}
+.input-field .input:focus, .input-field .input:valid ~ label{
+    border-bottom: 1px solid #743ae1;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(177, 173, 191, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #ebebeb;
+
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input-box{
+    margin-top: 50px;
+}
+.icons{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.iconContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.icon{
+    color: #0c1356;
+    margin-right: 30px;
+}
+.iconCard{
+    color: #0c1356;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+
+}
+.filter_buttons{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    background: transparent;
+
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #232F9D;
+    border: 5px solid #0c1356;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #e3eaf0;
+}
+button:hover {
+    background-color: #7b83cb;
+}
+button.active {
+    background:  #7b83cb;
+    color: #fff;
+
+}
+.iconarrow{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+}

@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e3eaf0;
+}
+.col {
+    margin-left: 200px;
+}
+.card.hide {
+    display: none;
+}
+.card-title{
+    margin-right: 40px;
+}
+.card-body{
+    padding: 25px;
+    display: flex;
+    margin-top: -15px;
+    height: 200px;
+}
+.btn-primary{
+    border-radius: 10px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: rgba(37,95,156,0.9);
+}
+h3,h5{
+    color: rgb(0, 91, 228)
+}
+.rectangle{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #222e9d;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+    color: #ececec;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+    
+}
+.input-field .input:focus, .input-field .input:valid ~ label{
+    border-bottom: 1px solid #743ae1;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(177, 173, 191, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #ebebeb;
+
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input-box{
+    margin-top: 50px;
+}
+.icons{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.iconContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.icon{
+    color: #0c1356;
+    margin-right: 30px;
+}
+.iconCard{
+    color: #0c1356;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+
+}
+.container {
+    margin-top: 100px;
+}
+.newarrival {
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.col-md-7 h2 {
+    color: #555;
+}
+.price{
+    color: #FE980F;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
