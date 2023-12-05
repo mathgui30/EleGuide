@@ -130,69 +130,14 @@
             </div>
 
         </div>
-    <div class="container py-5">
-        <h1 class="text-center">Produtos da sua Empresa</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
-            <div class="col">
-                <div class="card">
-                    <div class="iconCard"><svg onClick="abrirModalEditar()" data-bs-toggle="modal" data-bs-target="#Editar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
-                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                      </svg><svg onClick="abrirModalDeletar()" data-bs-toggle="modal" data-bs-target="#Deletar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                      </svg>
-                    </div>
-                    <img src="notebook gamer.png" class="card-img-top" alt="...">
-                    <div class="card-body" data-name="notebook">    
-                      <h5 class="card-title">Notebook gamer Alienware m16</h5>
-                      <p class="card-text">13ª geração Intel® Core™ i9-13900HX (24-core, cache de 36MB, até 5.4GHz Max Turbo) </p>
-                    </div>
-                    <div class="d-flex justify-content-around mb-5">
-                        <h3>R$ 12.997,00</h3>
-                        <button class="btn btn-primary">Visualizar</button>
-                    </div>
-                  </div>
+        <div class="container py-5">
+            <h1 class="text-center">Produtos da sua Empresa</h1>
+            <!-- Cards de produtos -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 py-5" id="cardsContainer">
+                <!-- Aqui serão inseridos os cards dos produtos -->
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="iconCard"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
-                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                      </svg>
-                    </div>
-                    <img src="monitor curvo.webp" class="card-img-top" alt="...">
-                    <div class="card-body" data-name="monitor">
-                      <h5 class="card-title">Monitor Concórdia Gamer Curvo</h5>
-                      <p class="card-text">D270f 27" 165hz 1ms Full Hd  Freesync | Hdmi | Dp | DVI | Phone 16.7 milhões de cores, LED em cores, taxa de 165 Hz Full HD</p>
-                    </div>
-                    <div class="d-flex justify-content-around mb-5">
-                        <h3>R$ 814,80</h3>
-                        <button class="btn btn-primary">Visualizar</button>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="iconCard"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green" class="bi bi-pencil" viewBox="0 0 16 16">
-                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                      </svg>
-                    </div>
-                    <img src="mouse.png" class="card-img-top" alt="...">
-                    <div class="card-body" data-name="mouse">
-                      <h5 class="card-title">Redragon Mouse TITANOBOA2</h5>
-                      <p class="card-text">Sensor Pixart PWM3389 de alta performance, Até 10 botões programáveis para deixar atalhos e funcionalidades na ponta dos dedos, Sistema de ajuste de peso com 5 pesos individuais de 10g</p>
-                    </div>
-                    <div class="d-flex justify-content-around mb-5">
-                        <h3>R$ 320,00</h3>
-                        <button class="btn btn-primary">Visualizar</button>
-                    </div>
-                  </div>
-            </div>
+        </div>
+    
             <div class="rectangle">
                 <div class="input-box">                   
                     <div class="input-field">
@@ -211,6 +156,9 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="products.js" defer></script>
     
 </body>
 </html>
