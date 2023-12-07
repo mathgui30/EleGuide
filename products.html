@@ -38,29 +38,30 @@
                                 <input type="text" class="input" id="nomeProd" required autocomplete="off">
                                 <label  type="text" for="text">Nome do Produto</label>
                             </div>
-                            <div class="input-field">
-                                <select id="select" class="form-select">
-                                    <option> Mouse</option>
-                                    <option> Processador</option>
-                                    <option> Notebook</option>
-                                    <option> Placa de vídeo</option>
-                                    <option> Monitor</option>
-                                </select>
+                            
                             </div>
-                            <div class="input-field">
-                                <label for="imageInput" class="form-label"></label>
-                                <input type="file" class="form-control" id="imageInput" accept="image/*">
-                            </div>
+                           
                             <div class="field">
                                 <label for="exampleFormControlTextarea1" class="form-label">Especificações</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" row="5"></textarea>
+                                <textarea class="form-control" id="descricao" row="5"></textarea>
                             </div>
+
+                            <div class="input-box">
+                                <div class="field">
+                                    <input type="text" class="input" id="preco" required autocomplete="off">
+                                    <label  type="text" for="text">Preço</label>
+                                </div>
                         </div>
+                        <div class="input-box">
+                            <div class="field">
+                                <input type="text" class="input" id="foto" required autocomplete="off">
+                                <label  type="text" for="text">Foto</label>
+                            </div>
 
                     </div>
-
+                    </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Adicionar Produto!</button>
+                        <button type="button"  id="adicionarProdutoBtn" class="btn btn-primary" data-bs-dismiss="modal"> Adicionar Produto!</button>
                     </div>
                 </div>
 
@@ -160,6 +161,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="scripts/products.js" defer></script>
+    <script src="scripts/addProduct.js" ></script>
     
 </body>
 </html>
