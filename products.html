@@ -8,9 +8,10 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/html/bootstrap.min.html" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="empresa.css" rel="stylesheet">
+    <link href="style/empresa.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="filter.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="scripts/filter.js"></script>
 </head>
 <body>
     <div class="iconContainer">
@@ -21,7 +22,7 @@
         </div>
     </div>
     </div>  
-    <button onClick="abrirModal()" type="button" class="product-button" data-bs-toggle="modal" data-bs-target="#JanelaModal"> Adicionar Produtos</button>
+    <button id="addProduto" onClick="abrirModal()" type="button" class="product-button" data-bs-toggle="modal" data-bs-target="#JanelaModal"> Adicionar Produtos</button>
     
         <div class="modal fade" id="JanelaModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
@@ -34,8 +35,8 @@
                     <div class="modal-body">
                         <div class="input-box">
                             <div class="field">
-                                <input type="text" class="input" id="email" required autocomplete="off">
-                                <label type="email" for="email">Nome do Produto</label>
+                                <input type="text" class="input" id="nomeProd" required autocomplete="off">
+                                <label  type="text" for="text">Nome do Produto</label>
                             </div>
                             <div class="input-field">
                                 <select id="select" class="form-select">
@@ -106,7 +107,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div>  
 
         </div>
         <div class="modal fade" id="Deletar" tabindex="-1">
@@ -158,7 +159,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="products.js" defer></script>
+    <script src="scripts/products.js" defer></script>
     
 </body>
 </html>

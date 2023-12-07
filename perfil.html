@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="style/perfil.css" rel="stylesheet">
+  <title>User Profile</title>
+</head>
+<body>
+
+<div id="icon" <a href="favorites.html">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0c1356" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+  </svg>
+</div>
+
+<div class="container">
+  <div class="user-profile">
+    <div class="text-center">
+      <img src="https://placekitten.com/80/80" alt="User Avatar" class="user-avatar">
+    </div>
+    <div>
+      <label for="name">Nome:</label>
+      <p id="name">John Doe</p>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <p id="email">john.doe@example.com</p>
+    </div>
+    <div>
+      <label>Data de Nascimento:</label>
+      <p>25 de Outubro, 1990</p>
+    </div>
+    <div class="user-options mt-3">
+      <button class="btn btn-danger mr-2" data-toggle="modal" data-target="#deleteModal">Deletar Conta</button>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#editModal">Editar Informações</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="editName">Nome:</label>
+            <input type="text" class="form-control" id="editName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="editEmail">Email:</label>
+            <input type="email" class="form-control" id="editEmail" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="editDOB">Data de Nascimento:</label>
+            <input type="text" class="form-control" id="editDOB" value="January 1, 1990" readonly>
+          </div>
+          <button type="submit" class="btn btn-primary">Salvar Mudanças</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Tem certeza que quer deletar a conta?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger">Deletar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
